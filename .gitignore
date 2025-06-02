@@ -1,0 +1,13 @@
+# Python virtual environment
+venv/
+
+# OS files
+__pycache__/
+*.pyc
+
+# Sensitive files - do NOT track these
+fernet.key
+encrypted_key.bin
+
+# Optional: if you're using .env
+.env
