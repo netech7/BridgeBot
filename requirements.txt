@@ -13,3 +13,4 @@ openpyxl
 matplotlib
 google-generativeai
 pytesseract
+python-dotenv
