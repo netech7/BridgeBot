@@ -79,6 +79,8 @@ encrypted_key.bin
 These files are required at runtime and must be kept in the root project directory.
 > Note: These files are intentionally excluded from Git version control via .gitignore for security reasons.
 
+---
+
 ## 🔐 Security & .gitignore Notes
 
 ### 🔒 API Key Protection
