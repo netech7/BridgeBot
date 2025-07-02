@@ -12,3 +12,4 @@ python-pptx
 openpyxl
 matplotlib
 google-generativeai
+pytesseract
