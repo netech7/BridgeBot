@@ -37,3 +37,16 @@
 ```bash
 git clone https://github.com/<your-username>/bridgeai-doc-assistant.git
 cd bridgeai-doc-assistant
+
+### 2. Create a Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+
+### 5. Run the Application
+```bash
+streamlit run main.py
