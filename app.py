@@ -10,7 +10,7 @@ from langchain.vectorstores import FAISS
 from utils.decrypt_key import get_decrypted_api_key
 
 # --- Page Configuration ---
-st.set_page_config(page_title="BridgeAI: Smart Information Assistant", layout="wide")
+st.set_page_config(page_title="BridgeBot: Smart Information Retrieval Assistant", layout="wide")
 
 # --- Login/Authentication ---
 if "authenticated" not in st.session_state:
@@ -18,7 +18,7 @@ if "authenticated" not in st.session_state:
 
 def login():
     with st.form("Login"):
-        st.subheader("🔒 Please log in to access BridgeAI")
+        st.subheader("🔒 Please log in to access BridgeBot")
         username = st.text_input("Username")
         password = st.text_input("Password", type="password")
         login_btn = st.form_submit_button("Login")
