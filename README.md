@@ -57,6 +57,10 @@ streamlit run main.py
 
 ---
 
+## NOTE:
+> For Streamlit Cloud deployment .env file is used.
+> ```fernet.key``` + ```encrypted_key.bin``` is kept as a secure offline-only option for internal or local sharing. This can be enabled by removing the ```get_decrypted_api_key``` function in the ```decrypt_key.py``` file and using the commented out code and following the procedure given below.
+
 ## 🔐 API Key Setup Instructions
 
 Before running the app, you must generate your encrypted Gemini API key.
@@ -87,26 +91,6 @@ These files are required at runtime and must be kept in the root project directo
 
 - API keys are encrypted using **Fernet**.
 - This project uses **AES-128-CBC encryption** with **HMAC-SHA256** integrity checks via `cryptography.fernet`.
-
-### 📂 .gitignore
-
-The `.gitignore` file prevents sensitive and unnecessary files from being committed:
-
-```gitignore
-# Secrets & Config
-.env
-key_config.py
-
-# Python Env & Cache
-venv/
-__pycache__/
-*.pyc
-
-# System & IDE
-.DS_Store
-.vscode/
-.idea/
-```
 
 ---
 
