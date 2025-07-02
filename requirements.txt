@@ -14,3 +14,4 @@ matplotlib
 google-generativeai
 pytesseract
 python-dotenv
+sentence-transformers
