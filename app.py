@@ -76,36 +76,17 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# --- Prescriptive Trigger Function ---
-def get_prescriptive_suggestion(user_query):
-    triggers = [
-        {
-            "keywords": ["vendor", "data", "leak"],
-            "suggestion": "💡 Would you like to initiate a vendor risk reassessment?",
-            "action": "Initiate Risk Review"
-        },
-        {
-            "keywords": ["gdpr", "privacy"],
-            "suggestion": "💡 Do you want to notify the Data Privacy Officer?",
-            "action": "Notify DPO"
-        }
-    ]
-    for t in triggers:
-        if all(word in user_query.lower() for word in t["keywords"]):
-            return t["suggestion"], t["action"]
-    return None, None
-
 # --- Header ---
 col1, col2 = st.columns([1, 5])
 with col1:
     st.markdown("<h1 style= 'padding-top: 17px;'> </h1>", unsafe_allow_html=True)
     st.image("bsid.png", width=170)
 with col2:
-    st.markdown("<h1 style='color:#FD8A8A; padding-top: 10px;'>Bridge InfoSys: Smart Information Assistant</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='color:#FD8A8A; padding-top: 10px;'>BridgeBot: Digital Transformation</h1>", unsafe_allow_html=True)
     st.markdown("""
         <p style='color:white;'>
         A user-friendly, AI-powered assistant that helps retrieve document-specific policies instantly using natural language queries.\n
-        BridgeAI helps you instantly understand, analyze, and interact with your internal documents using AI.
+        BridgeBot helps you instantly understand, analyze, and interact with your internal documents using AI.
         Upload files and ask questions to retrieve key insights effortlessly.
         </p>
     """, unsafe_allow_html=True)
@@ -214,3 +195,22 @@ if uploaded_files:
     st.metric("📎 Files Uploaded", len(uploaded_files))
 else:
     st.info("Please upload at least one document to enable Q&A.")
+
+# --- Prescriptive Trigger Function ---
+def get_prescriptive_suggestion(user_query):
+    triggers = [
+        {
+            "keywords": ["vendor", "data", "leak"],
+            "suggestion": "💡 Would you like to initiate a vendor risk reassessment?",
+            "action": "Initiate Risk Review"
+        },
+        {
+            "keywords": ["gdpr", "privacy"],
+            "suggestion": "💡 Do you want to notify the Data Privacy Officer?",
+            "action": "Notify DPO"
+        }
+    ]
+    for t in triggers:
+        if all(word in user_query.lower() for word in t["keywords"]):
+            return t["suggestion"], t["action"]
+    return None, None
