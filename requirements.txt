@@ -10,5 +10,5 @@ PyMuPDF
 python-docx
 python-pptx
 openpyxl
-
+matplotlib
 google-generativeai
