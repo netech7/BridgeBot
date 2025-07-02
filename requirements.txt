@@ -1,8 +1,14 @@
 streamlit==1.32.2
-openai==0.27.8
+#openai==0.27.8
 langchain==0.0.325
 faiss-cpu
 pdfplumber
 python-dotenv
 deep-translator
 langdetect
+PyMuPDF
+python-docx
+python-pptx
+openpyxl
+
+google-generativeai

@@ -5,8 +5,8 @@ import getpass
 key = Fernet.generate_key()
 fernet = Fernet(key)
 
-# Step 2: Ask you (the developer) to input your OpenAI API key
-api_key = input("Enter your OpenAI API key: ").strip()
+# Step 2: Input your OpenAI API key
+api_key = input("Enter your API key: ").strip()
 
 # Step 3: Encrypt it
 encrypted_key = fernet.encrypt(api_key.encode())

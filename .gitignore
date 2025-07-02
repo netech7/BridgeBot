@@ -5,9 +5,20 @@ venv/
 __pycache__/
 *.pyc
 
+# API keys & environment variables
+.env
+*.key
+*.pem
+key_config.py
+
 # Sensitive files - do NOT track these
 fernet.key
 encrypted_key.bin
 
-# Optional: if you're using .env
-.env
+# Logs and temp files
+*.log
+*.tmp
+
+# IDE settings
+.vscode/
+.idea/
