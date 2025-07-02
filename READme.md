@@ -57,6 +57,28 @@ streamlit run main.py
 
 ---
 
+## 🔐 API Key Setup Instructions
+
+Before running the app, you must generate your encrypted Gemini API key.
+
+### 🔧 Step-by-Step
+
+1. Run the following script to generate the necessary encryption files:
+
+   ```bash
+   python key_setup.py
+   
+The script will:
+Prompt you to enter your Gemini API key
+Generate two files:
+```
+fernet.key
+encrypted_key.bin
+```
+
+These files are required at runtime and must be kept in the root project directory.
+> Note: These files are intentionally excluded from Git version control via .gitignore for security reasons.
+
 ## 🔐 Security & .gitignore Notes
 
 ### 🔒 API Key Protection
