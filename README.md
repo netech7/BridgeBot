@@ -57,7 +57,7 @@ streamlit run main.py
 
 ---
 
-## NOTE:
+### NOTE:
 > For Streamlit Cloud deployment .env file is used.
 > ```fernet.key``` + ```encrypted_key.bin``` is kept as a secure offline-only option for internal or local sharing. This can be enabled by removing the ```get_decrypted_api_key``` function in the ```decrypt_key.py``` file and using the commented out code and following the procedure given below.
 
