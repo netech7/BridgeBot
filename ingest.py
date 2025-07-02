@@ -111,7 +111,7 @@ def process_documents(uploaded_files, embedding_model):
             ))
 
         elif filename.endswith(".xlsx"):
-            df = pd.read_excel(file)
+            df = pd.read_excel(file, parse_dates=True)
             combined_text = df.to_string()
             lang = detect_language(combined_text)
             all_docs.append(Document(
