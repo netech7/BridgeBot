@@ -1,6 +1,6 @@
-# BridgeAI: Smart Document Assistant
+# BridgeBot: Smart Information Retrieval Assistant
 
-**BridgeAI** is an AI-powered assistant designed to automate document retrieval and analytics within enterprise departments such as IT, GRC, and HR. Built during an internship at Bridgestone India, the assistant supports natural language queries and descriptive analysis over structured and unstructured internal documents.
+**BridgeBot** is an AI-powered assistant designed to automate document retrieval and analytics within enterprise departments such as IT, GRC, and HR. Built during an internship at Bridgestone India, the assistant supports natural language queries and descriptive analysis over structured and unstructured internal documents.
 
 ---
 
